@@ -25,6 +25,7 @@ nav {
     border-color: rgb(162, 183, 218);
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
 }
 
 #nav-content {
