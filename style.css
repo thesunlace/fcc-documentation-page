@@ -1,0 +1,148 @@
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #181a1b;
+    color: rgba(162, 183, 218, 0.7);
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+nav {
+    display: block;
+}
+
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 20px;
+    left: 10px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgb(162, 183, 218);
+    display: flex;
+    flex-direction: column;
+}
+
+#nav-content {
+    margin-top: 5px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    list-style: none;
+}
+
+#nav-header {
+    color: rgb(162, 183, 218);
+    display: block;
+    margin: 10px;
+    font-size: 1.8em;
+}
+
+main {
+    display: block;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+
+header {
+    color: rgb(162, 183, 218);
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(162, 183, 218);
+    transition: color 0.5s;
+}
+
+a {
+    color: rgb(162, 183, 218);
+    transition: color 0.5s;
+    background-color: transparent;
+}
+
+a:hover {
+    color: #0556f3;
+    transition: color 0.5s;
+}
+
+.big-code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: rgb(29, 31, 32);
+    color: rgb(181, 175, 166);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+code {
+    line-height: 2;
+    background-color: rgb(29, 31, 32);
+    color: rgb(181, 175, 166);
+    padding: .125rem .25rem;
+    border-radius: 5px;
+}
+
+kbd {
+    background-color: rgb(34, 36, 38);
+    border-color: rgb(69, 75, 78);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 1px, rgba(24, 26, 27, 0.7) 0px 2px 0px 0px inset;
+    color: rgb(200, 195, 188);
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        position: static;
+        width: 100%;
+        border-right: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #main-doc {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    #nav-header {
+        font-size: 1.5em;
+    }
+
+    .big-code {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    header {
+        font-size: 28px;
+    }
+}
